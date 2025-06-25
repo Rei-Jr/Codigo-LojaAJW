@@ -1,0 +1,323 @@
+from time import sleep
+
+listagem = ('camiseta', 89.99,
+            'camisa', 65.00,
+            'blusa',119.99,
+            'calça',150.00,
+            'short',55.00,
+            'tenis',799.99)
+print('--'*13)
+print('Álvaro Junior Wear')
+print('--'*13)
+
+print('FAZER CADASTRO')
+print('--'*22)
+sleep(1)
+nome_completo = str(input('NOME COMPLETO: '))
+print('-'*22)
+sleep(1)
+
+cpf_rg = input('CPF OU RG: ')
+print('-'*22)
+sleep(1)
+
+email = input('Email: ')
+print('-'*22)
+sleep(1)
+
+cel = input('Celular: ')
+print('-'*32)
+sleep(1)
+
+print('CADASTRO FEITO VAMOS PARA O MUNDO DE.....')
+print('-'*32)
+sleep(2)
+print('ÁLVARO JUNIOR WEAR')
+print('-'*22)
+print('VALORES')
+print('-'*22)
+
+for pos in range(len(listagem)):
+    if pos % 2 == 0:
+        print('{}.......'.format(listagem[pos]), end='')
+
+    else:
+        print('{}'.format(listagem[pos]))
+print('--'*22)
+
+
+print(F'Seja Bem-Vindo(a) {nome_completo}')#nome da pessoa
+
+print('--'*22)
+sleep(1)
+
+
+#LUGAR SELECIONA P PRODUTO
+compra = str(input('SELECIONE O PRODUTO USANDO NOME DELE:')).strip().lower()
+print('--'*22)
+
+#TENIS
+if compra == 'tenis':
+    print('VALOR DO TENIS R$799,99')
+    print('--' * 22)
+
+    print('FORMA DE PAGAMENTO')
+    print('--' * 22)
+
+    pc = str(input('DEBITO & CREDITO:')).strip().lower()
+    print('--' * 22)
+    sleep(1)
+
+    if pc == 'debito':
+        pc = input('DIGITE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO....')
+        print('--' * 22)
+
+        sleep(1)
+
+        print(f'BOA COMPRA, {nome_completo}')#nome da pessoa
+        print('--' * 22)
+        sleep(1)
+
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+
+    elif pc == 'credito':
+        print('NO CREDITO SO FAZ ATE 2X')
+        print('--' * 22)
+
+        pc = input('DIGTE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO....')
+        print('--' * 22)
+
+        sleep(1)
+
+        print(f'BOAS COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+#BLUSA
+elif compra == 'blusa':
+    print('VALOR DA BLUSA R$119,99')
+    print('--' * 22)
+
+    print('FORMA DE PAGAMENTO')
+    print('--' * 22)
+
+    pc = str(input('DEBITO & CREDITO:')).strip().lower()
+    print('--' * 22)
+
+    if pc == 'debito':
+        pc = input('DIGITE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO....')
+        print('--' * 22)
+
+        sleep(1)
+
+        print(f'BOA COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+
+    elif pc == 'credito':
+        print('NO CREDITO SO FAZ ATE 2X')
+        print('--' * 22)
+
+        pc = input('DIGTE A SENHA:')
+        print('--'*22)
+        print('PROCESSANDO....')
+        print('--' * 22)
+
+        sleep(1)
+
+        print(f'BOAS COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+#CAMISETA
+elif compra == 'camiseta':
+    print('VALOR DA CAMISETA R$89,99')
+    print('--' * 22)
+
+    print('FORMA DE PAGAMENTO')
+    print('--' * 22)
+
+    pc = str(input('DEBITO & CREDITO:')).strip().lower()
+    print('--' * 22)
+
+    if pc == 'debito':
+        pc = input('DIGITE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO.....')
+        print('--' * 22)
+        sleep(2)
+
+        print(f'BOA COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+
+    elif pc == 'credito':
+        print('NO CREDITO SO FAZ ATE 2X')
+        print('--' * 22)
+
+        pc = input('DIGTE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO.....')
+        print('--' * 22)
+        sleep(2)
+
+        print(f'BOAS COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+#CALÇA
+elif compra == 'calça':
+    print('VALOR DA CALÇA R$150,00')
+    print('--' * 22)
+
+    print('FORMA DE PAGAMENTO')
+    print('--' * 22)
+
+    pc = str(input('DEBITO & CREDITO:')).strip().lower()
+    print('--' * 22)
+
+    if pc == 'debito':
+        pc = input('DIGITE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO.....')
+        print('--' * 22)
+        sleep(2)
+
+
+        print(f'BOA COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--'*22)
+
+
+    elif pc == 'credito':
+        print('NO CREDITO SO FAZ ATE 2X')
+        print('--' * 22)
+
+        pc = input('DIGTE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO.....')
+        print('--' * 22)
+        sleep(2)
+
+        print(f'BOAS COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+#SHORT
+elif compra == 'short':
+    print('VALOR DO SHORT R$55.00')
+    print('--' * 22)
+
+    print('FORMA DE PAGAMENTO')
+    print('--' * 22)
+
+    pc = str(input('DEBITO & CREDITO:')).strip().lower()
+    print('--' * 22)
+
+    if pc == 'debito':
+        pc = input('DIGITE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO.....')
+        print('--' * 22)
+        sleep(2)
+
+        print(f'BOA COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+
+    elif pc == 'credito':
+        print('NO CREDITO SO FAZ ATE 2X')
+        print('--' * 22)
+
+        pc = input('DIGTE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO.....')
+        print('--' * 22)
+        sleep(2)
+
+        print(f'BOAS COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+#CAMISA
+elif compra == 'camisa':
+    print('VALOR DA CAMISA R$65.00')
+    print('--' * 22)
+
+    print('FORMA DE PAGAMENTO')
+    print('--' * 22)
+
+    pc = str(input('DEBITO & CREDITO:')).strip().lower()
+    print('--' * 22)
+
+    if pc == 'debito':
+        pc = input('DIGITE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO.....')
+        print('--' * 22)
+        sleep(2)
+
+        print(f'BOA COMPRA, {nome_completo}')  # nome da pessoa
+        print('--' * 22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
+
+    elif pc == 'credito':
+        print('NO CREDITO SO FAZ ATE 2X')
+        print('--' * 22)
+
+        pc = input('DIGTE A SENHA:')
+        print('--' * 22)
+        print('PROCESSANDO.....')
+        print('--' * 22)
+        sleep(2)
+
+        print(f'BOAS COMPRA, {nome_completo}')  # nome da pessoaprint
+        print('--'*22)
+        sleep(2)
+
+        print('VOLTE SEMPRE NA ÁLVARO JUNIOR WEAR.')
+        print('--' * 22)
+
